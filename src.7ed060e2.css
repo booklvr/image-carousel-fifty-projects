@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.carousel {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  height: 530px;
+  width: 500px;
+  overflow: hidden;
+}
+.carousel .image-container {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+.carousel .image-container img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+.carousel .buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+.carousel .buttons-container .btn {
+  background-color: rebeccapurple;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  width: 49.5%;
+}
+.carousel .buttons-container .btn:hover {
+  opacity: 0.9;
+}
+.carousel .buttons-container .btn:focus {
+  outline: none;
+}
+
+/*# sourceMappingURL=/src.7ed060e2.css.map */
